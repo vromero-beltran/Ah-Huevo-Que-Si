@@ -1,0 +1,11 @@
+header {
+    padding: 20px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    background-color: rgb(255, 183, 2);
+    color: black;
+}
+
+.menu {
+    display: inline-block;
+    font-size: 48px;
+}
