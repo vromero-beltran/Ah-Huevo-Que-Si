@@ -1,11 +1,33 @@
-header {
-    padding: 20px;
-    font-family: Script, Calligraphy, Handwritten Typefaces;
-    background-color: rgb(255, 183, 2);
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu {
-    display: inline-block;
-    font-size: 48px;
+body {
+    min-height: 100vh;
+    background-image: url(./download/background.png);
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    
+}
+
+.logo {
+
 }
