@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url(/download/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(40, 40, 40);
+}
+
+.logo {
+    height: 250px;
+}
+
+.nav a{
+    font-size: 25px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.menu-header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu-header h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.menu-header h2::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.menus h4 {
+    font-size: 22px;
+}
+
+.main-food {
+    text-align: center;
+    flex-basis: 32%;
+}
+
+.main-food h2 {
+    font-size: 40px;
+}
+
+.lunch-dinner {
+    padding-top: 40px;
+}
+
+.meats {
+    padding-top: 40px;
+}
+
+.other-drink h2{
+    font-size: 40px;
+}
+
+.other-drink {
+    display: flex;
+}
+
+.left {
+    padding: 50px;
+}
+
+.right {
+    padding: 50px;
+}
+
+.footer {
+height: 95px;
+    background-color: black;
+}
