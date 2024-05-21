@@ -38,9 +38,37 @@ nav a {
 
 main{
     min-height: 100vh;
-    background-image: url(./download/background.png);
+    background-image: url(/download/background-2.jpg) !important;
     background-size: cover;
     background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.hours {
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.phone-number {
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.address {
+    font-size: 30px;
 }
 
 .starter {
@@ -58,6 +86,10 @@ main{
 
 .starter p {
     font-size: 25px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    padding: 10px;
+    margin: 5px;
 }
 
 .services {
@@ -72,23 +104,30 @@ main{
 
 .explained {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
 
 }
 
 .iner-block {
     border-radius: 10px 10px 10px 10px;
-    background-color: #f3f4f6;
+    background-color: hsla(0, 0%, 100%, 0.6);
     padding: 10px;
-    margin-inline-end: 22px;
+    margin: 5px;
 }
 
 .iner-block h4 {
     font-size: 25px;
 }
 
-.footer {
-    height: 90px;
-        background-color: black;
+    .footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(40, 40, 40);
+        color: rgb(195, 195, 195);
+    }
+    
+    .footer h2 {
+        font-size: 20px;
     }

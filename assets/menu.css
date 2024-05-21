@@ -9,7 +9,8 @@ body {
 
 .container {
     min-height: 100vh;
-    background-image: url(/download/background.png);
+    width: 100%;
+    background-image: url(/download/background-2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -72,6 +73,9 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 60px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    /* width: 50%; Needs work here!!!!!!!!!!! */
 }
 
 .menus h4 {
@@ -91,16 +95,22 @@ header {
     padding-top: 40px;
 }
 
+.lunch-dinner-dishes h2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 33px;
+}
+
 .meats {
     padding-top: 40px;
 }
 
-.other-drink h2{
-    font-size: 40px;
+.extras-sides-drink {
+    display: flex;
 }
 
-.other-drink {
-    display: flex;
+.extras-sides-drink h2{
+    font-size: 40px;
 }
 
 .left {
