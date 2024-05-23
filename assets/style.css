@@ -8,102 +8,47 @@
 body {
     min-height: 100vh;
     background: url(/download/background-2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    line-height: 1.5;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    overflow-x: hidden;
+    background-size:cover;
+    background-position-x: center;
 }
+/* .........Header.......... */
 
-.flex {
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 100px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
     display: flex;
-    gap: var(--gap, 1rem);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(40, 40, 40);
 }
-
 .logo {
     height: 250px;
 }
 
-.primary-header {
-    align-items: center;
-    justify-content: space-between;
-}
-
-.mobile-nav-toggle {
-    display: none;
-}
-
-.primary-navigation {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.primary-navigation a {
+.nav a{
+    font-size: 25px;
+    padding: 3px;
     text-decoration: none;
-    padding: 0;
-    margin: 0;
-    background: hsl(0 0% 0% / 0.5);
+    color: white;
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-    }
-}
-
-.primary-navigation a > [aria-hidden="true"] {
-    font-weight: 700;
-    margin-inline-end: 0.75em;
-}
-
-@media (max-width: 35em) {
-    .primary-navigation {
-        --gap: 2em;
-        position: fixed;
-        z-index: 1000;
-        inset: 0, 0, 0, 30%;
+@media(max-width: 600px) {
+    header {
+        display: flex;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
+        font-size: 60px;
     }
 
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        width: 2rem;
-        background-color: transparent;
-        background-image: url("download/menu-regular-24.png");
-        background-repeat: no-repeat;
-        border: 0;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("download/x-circle-solid-24.png");
-    }
-
-}
-
-@media (min-width: 35em) {
-    .primary-navigation {
-        --gap: clamp(1.5rem, 5vw, 3rem);
-        padding-block: 2rem;
-        padding-inline: clamp(3rem, 10vw, 10rem);
-        background: red;
+    nav a {
+        padding-top: 30px;
     }
 }
-
+/* ..........Main......... */
 .container {
     display: flex;
     justify-content: center;
@@ -154,7 +99,6 @@ body {
     background-color: hsla(0, 0%, 100%, 0.6);
     padding: 10px;
     margin: 5px;
-    width: 800px;
 }
 
 .services {
@@ -168,12 +112,14 @@ body {
     color: rgb(0, 0, 0);
     background-color: hsla(0, 0%, 100%, 0.6);
     border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .explained {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 500px;
+    width: 700px;
     padding-bottom: 40px;
 }
 
@@ -186,8 +132,60 @@ body {
 
 .iner-block h4 {
     font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
+@media(max-width: 700px) {
+    
+    .explained {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    .iner-block {
+        width: 280px;
+    }
+}
+
+@media(max-width: 605px) {
+    .explained {
+        padding-left: 80px;
+        padding-right: 30px;
+    }
+    .iner-block {
+        width: 220px;
+    }
+}
+
+@media(max-width: 525px) {
+    .iner-block {
+        width: 360px;
+        padding-right: 2px; 
+        /* NEEDS WORK */
+    }
+
+    .explained {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .iner-block h4 {
+        font-size: 40px;
+    }
+
+    .services h2 {
+        padding-left: 80px;
+    }
+
+    .starter-h2 {
+        padding-left: 35px;
+    }
+}
+
+/* ..........Footter........ */
     .footer {
         padding: 30px;
         clear: both;

@@ -12,28 +12,13 @@
 </head>
 
 <body>
-    <header class="primary-header flex">
-        <div>
-            <img src="/download/logo.png" class="logo" />
-        </div>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-        </button>
-        <nav>
-            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                <li class="active">
-                    <a href="index.html">
-                        <!-- aria-hidden hides "00" for screen readers -->
-                        <span aria-hidden="true"></span>Home
-                    </a>
-                </li>
-                <li>
-                    <a href="menu.html"> <span aria-hidden="true"></span>Menu </a>
-                </li>
-                <li>
-                    <a href="gallery.html"> <span aria-hidden="true"></span>Gallery </a>
-                </li>
-            </ul>
+    <header>
+        <img src="/download/logo.png" class="logo">
+        <nav class="nav">
+            <a href="/index.html">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
