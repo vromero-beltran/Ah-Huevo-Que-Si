@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Ah Huevo Que Si</title>
-        <link rel="stylesheet" href="/assets/style.css" />
-    </head>
-    <body>
-        <header>
-            <img src="/download/logo.png" class="logo">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <div class="container">
-                <div class="hours">
-                    <p>Mon - Fri 11:30am ~ 8:00pm</p>
-                    <p>Sat - Sun Closed</p>
-                </div>
-                <div class="phone-number">
-                    <h3>(503)847-6711</h3>
-                </div>
-                <div class="address">
-                    <p>14015 NE Glisan St</p>
-                    <p>Portland, OR 97230</p>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ah Huevo Que Si</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="nav.js" defer></script>
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div>
+            <img src="/download/logo.png" class="logo" />
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">
+                        <!-- aria-hidden hides "00" for screen readers -->
+                        <span aria-hidden="true"></span>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html"> <span aria-hidden="true"></span>Menu </a>
+                </li>
+                <li>
+                    <a href="gallery.html"> <span aria-hidden="true"></span>Gallery </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hours">
+                <p>Mon - Fri 11:30am ~ 8:00pm</p>
+                <p>Sat - Sun Closed</p>
             </div>
-            <div class="starter">
-                <h2>Experience the best of Mexican cuisine</h2>
-                <p>Ah Huevo Que Si brings the vibrant 
-                    flavors of Michoacan, Jalisco, and 
-                    Nayarit to your table. We offer a 
-                    delicious and authentic combination 
-                    of Mexican brunch and dinner 
-                    specialties, sure to satisfy your 
-                    cravings. Our food truck is dedicated 
-                    to providing you with a unique and 
-                    unforgettable dining experience that 
-                    will transport you to the heart of 
-                    Mexico. Come and taste our Jalisco 
-                    mix, and let us take you on a culinary 
-                    journey South of the border.</p>
-                    <img>
+            <div class="phone-number">
+                <h3>(503)847-6711</h3>
             </div>
-            <div class="services">
-                <h2>Services We Provide</h2>
-                <div class="explained">
-                    <div class="iner-block">
-                        <h4>Mexican Brunch</h4>
-                        <p>Experience the rich and diverse 
-                            flavors of our authentic Mexican 
-                            dinner dishes that are perfect for 
-                            any occasion, from a casual night out 
-                            with friends to a romantic dinner for 
-                            two.</p>
-                    </div>
-                    <div class="iner-block">
-                        <h4>Dinner Delights</h4>
-                        <p>Experience the rich and diverse 
-                            flavors of our authentic Mexican 
-                            dinner dishes that are perfect for 
-                            any occasion, from a casual night out 
-                            with friends to a romantic dinner for 
-                            two.</p>
-                    </div>
-                    <div class="iner-block">
-                        <h4>Jalisco Mix</h4>
-                        <p>Experience the unique and diverse 
-                            flavors of our Jalisco Mix dishes 
-                            that combine the best of Michoacan, 
-                            Jalisco, and Nayarit types of 
-                            foods.</p>
-                    </div>
-                    <div class="iner-block">
-                        <h4>Special Catering</h4>
-                        <p>Let us bring the authentic flavors of 
-                            Mexico to your next event with our special 
-                            catering services that offer a wide range 
-                            of dishes to satisfy everyone’s taste 
-                            buds.</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footer">
-                <h2>Contact # (503)847-6711</h2>
+            <div class="address">
                 <p>14015 NE Glisan St</p>
                 <p>Portland, OR 97230</p>
-                <p>
-                    &copy; 2024 by Ah Huevo Que Si. Proudly created by Victor Romero-Beltran.
-                </p>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="starter">
+            <h2>Experience the best of Mexican cuisine</h2>
+            <p>
+                Ah Huevo Que Si brings the vibrant flavors of Michoacan, Jalisco, and
+                Nayarit to your table. We offer a delicious and authentic combination
+                of Mexican brunch and dinner specialties, sure to satisfy your
+                cravings. Our food truck is dedicated to providing you with a unique
+                and unforgettable dining experience that will transport you to the
+                heart of Mexico. Come and taste our Jalisco mix, and let us take you
+                on a culinary journey South of the border.
+            </p>
+            <img />
+        </div>
+        <div class="services">
+            <h2>Services We Provide</h2>
+            <div class="explained">
+                <div class="iner-block">
+                    <h4>Mexican Brunch</h4>
+                    <p>
+                        Experience the rich and diverse flavors of our authentic Mexican
+                        dinner dishes that are perfect for any occasion, from a casual
+                        night out with friends to a romantic dinner for two.
+                    </p>
+                </div>
+                <div class="iner-block">
+                    <h4>Dinner Delights</h4>
+                    <p>
+                        Experience the rich and diverse flavors of our authentic Mexican
+                        dinner dishes that are perfect for any occasion, from a casual
+                        night out with friends to a romantic dinner for two.
+                    </p>
+                </div>
+                <div class="iner-block">
+                    <h4>Jalisco Mix</h4>
+                    <p>
+                        Experience the unique and diverse flavors of our Jalisco Mix
+                        dishes that combine the best of Michoacan, Jalisco, and Nayarit
+                        types of foods.
+                    </p>
+                </div>
+                <div class="iner-block">
+                    <h4>Special Catering</h4>
+                    <p>
+                        Let us bring the authentic flavors of Mexico to your next event
+                        with our special catering services that offer a wide range of
+                        dishes to satisfy everyone’s taste buds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2>Contact # (503)847-6711</h2>
+            <p>14015 NE Glisan St</p>
+            <p>Portland, OR 97230</p>
+            <p>
+                &copy; 2024 by Ah Huevo Que Si. Proudly created by Victor
+                Romero-Beltran.
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>
