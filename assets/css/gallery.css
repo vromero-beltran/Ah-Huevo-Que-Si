@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+}
+
+body {
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 100px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(40, 40, 40);
+}
+
+.logo {
+    height: 250px;
+}
+
+.nav a{
+    font-size: 25px;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+    }
+
+    nav a {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 525px) {
+    .nav {
+        font-size: 60px;
+    }
+}
+
+/* #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+} */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: rgb(195, 195, 195);
+}
+
+.footer p {
+    padding: 3px;
+}
+
+.footer h2 {
+    font-size: 20px;
+}

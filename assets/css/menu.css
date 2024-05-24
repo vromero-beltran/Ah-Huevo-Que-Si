@@ -181,6 +181,10 @@ header {
     color: rgb(195, 195, 195);
 }
 
+.footer p {
+    padding: 3px;
+}
+
 .footer h2 {
     font-size: 20px;
 }
