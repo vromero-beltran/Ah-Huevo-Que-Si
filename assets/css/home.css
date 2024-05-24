@@ -67,10 +67,20 @@ header {
     
 }
 
+.container h2 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hours {
+    font-size: 30px;
+}
+
+.hours p {
     padding: 5px;
     margin: 10px;
-    font-size: 30px;
 }
 
 .phone-number {
@@ -79,10 +89,19 @@ header {
     font-size: 30px;
 }
 
+.phone-number p {
+    padding: 5px;
+    margin: 10px;
+}
+
 .address {
     font-size: 30px;
 }
 
+.address p {
+    padding: 5px;
+    margin: 10px;
+}
 .starter {
     display: flex;
     justify-content: center;
