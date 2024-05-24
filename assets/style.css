@@ -48,6 +48,12 @@ header {
         padding-top: 30px;
     }
 }
+
+@media(max-width: 525px) {
+    .nav {
+        font-size: 60px;
+    }
+}
 /* ..........Main......... */
 .container {
     display: flex;
@@ -87,16 +93,17 @@ header {
 }
 
 .starter h2 {
+    padding: 20px;
     font-size: 50px;
     color: rgb(0, 0, 0);
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.8);
     border-radius: 10px 10px 10px 10px;
 }
 
 .starter p {
     font-size: 25px;
     border-radius: 10px 10px 10px 10px;
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.8);
     padding: 10px;
     margin: 5px;
 }
@@ -109,8 +116,9 @@ header {
 
 .services h2 {
     font-size: 50px;
+    padding: 20px;
     color: rgb(0, 0, 0);
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.8);
     border-radius: 10px 10px 10px 10px;
     display: flex;
     justify-content: center;
@@ -125,7 +133,7 @@ header {
 
 .iner-block {
     border-radius: 10px 10px 10px 10px;
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.8);
     padding: 10px;
     margin: 5px;
 }
@@ -158,10 +166,21 @@ header {
 }
 
 @media(max-width: 525px) {
+
+    .hours {
+        font-size: 28px;
+    }
+
+    .phone-number {
+        font-size: 40px;
+    }
+
+    .address {
+        font-size: 35px;
+    }
+
     .iner-block {
-        width: 360px;
-        padding-right: 2px; 
-        /* NEEDS WORK */
+        width: 270px;
     }
 
     .explained {
@@ -174,10 +193,6 @@ header {
 
     .iner-block h4 {
         font-size: 40px;
-    }
-
-    .services h2 {
-        padding-left: 80px;
     }
 
     .starter-h2 {

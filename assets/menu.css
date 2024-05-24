@@ -5,6 +5,12 @@
 }
 
 body {
+    height: 100 vh;
+}
+
+main {
+    flex: 1;
+    overflow: scroll;
 }
 
 .container {
@@ -39,6 +45,27 @@ header {
     color: white;
 }
 
+@media(max-width: 525px) {
+    .menu-box {
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .meats {
+        font-size: 40px;
+    }
+
+    .left-mini-menu-box {
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
 @media(max-width: 600px) {
     header {
         display: flex;
@@ -49,6 +76,17 @@ header {
     nav a {
         padding-top: 30px;
     }
+}
+
+@media(min-width: 483px) {
+    .extras-sides-drink {
+        padding: 90px;
+    }
+}
+
+.menu-box {
+    margin: 10px;
+    padding: 5px;
 }
 
 .menu-header {
@@ -125,11 +163,13 @@ header {
 }
 
 .left {
-    padding: 50px;
+    padding: 9px;
+    margin: 1px;
 }
 
 .right {
-    padding: 50px;
+    padding: 9px;
+    margin: 1px;
 }
 
 .footer {
