@@ -18,6 +18,19 @@
                 <a href="/contact.html">Contact</a>
             </nav>
         </header>
+        <main>
+            <div class="container">
+                <form method="post" action="" name="contact-form">
+                    <h4>Contact Us</h4>
+                    <!-- Make sure to add the "name" from the inputs onto the google sheet to intake info -->
+                    <input type="text"  name="your-name" placeholder="Name">
+                    <input type="text" name="your-number" placeholder="Phone Number">
+                    <input type="email" name="your-email" placeholder="Email" >
+                    <textarea name="message" rows="7" placeholder="Enter Message Here"></textarea>
+                    <input type="submit" value="submit" id="submit" >
+                </form>
+            </div>
+        </main>
         <footer>
             <div class="footer">
                 <h2>Contact # (503)847-6711</h2>
@@ -28,5 +41,8 @@
                 </p>
             </div>
         </footer>
+        <script src="script.js" >
+
+        </script>
     </body>
 </html>
