@@ -5,6 +5,11 @@
     font-family: Script, Calligraphy, Handwritten Typefaces;
 }
 
+body {
+    background: url(/download/background-2.jpg) no-repeat;
+    background-size: 100%;
+}
+
 /* ........Header.......... */
 
 
@@ -61,9 +66,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: url(/download/background-2.jpg) no-repeat;    background-size: cover;
-}
+    flex-direction: column;}
 
 .contact .content {
     max-width: 800px;
@@ -203,6 +206,11 @@ input[type="submit"]:active {
 }
 
 @media( max-width:991px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
     .contact {
         padding: 50px;
     }
