@@ -64,6 +64,7 @@ header {
     height: 56vmin;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
 
 #image-track {
@@ -73,6 +74,10 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(0%, 50%);
+    user-select: none;
+    /* overflow-x: auto; */
+    white-space: nowrap;
+    width: 100vw;
 }
 
 .footer {
