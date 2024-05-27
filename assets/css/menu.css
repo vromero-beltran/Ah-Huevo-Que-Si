@@ -89,6 +89,22 @@ header {
     padding: 5px;
 }
 
+.carne-width {
+    width: 700px;
+}
+
+@media(max-width: 800px) {
+    .carne-width {
+        width: 600px;
+    }
+}
+
+@media(max-width: 670px) {
+    .menu-box {
+        width: 400px;
+    }
+}
+
 .menu-header {
     max-width: 700px;
     margin: 0 auto;
@@ -156,6 +172,7 @@ header {
     display: flex;
     background-color: hsla(0, 0%, 100%, 0.5);
     border-radius: 10px 10px 10px 10px;
+    width: 720px;
 }
 
 .extras-sides-drink h2{

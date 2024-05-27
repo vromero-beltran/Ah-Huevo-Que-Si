@@ -54,6 +54,17 @@ header {
     .nav {
         font-size: 60px;
     }
+
+  .text {
+    width: 300px;
+  }
+  .box {
+    width: 220px;
+  }
+
+  .width-box {
+    width: 195px;
+  }
 }
 
 
