@@ -165,6 +165,8 @@ header {
 
 .extras-sides-drink {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsla(0, 0%, 100%, 0.5);
     border-radius: 10px 10px 10px 10px;
     width: 720px;
