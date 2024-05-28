@@ -97,13 +97,18 @@ header {
 }
 
 .grid-gallery .grid-item a {
-    cursor: pointer;
+    cursor:auto;
+    pointer-events: none;
 }
 
 @media(max-width: 578px) {
     .grid-gallery .grid-item {
         width: 350px;
         height: 350px;
+    }
+
+    .grid-gallery .grid-item:hover img {
+        transform: scale(none);
     }
 }
 
