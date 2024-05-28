@@ -80,7 +80,7 @@ header {
 
 @media(min-width: 483px) {
     .extras-sides-drink {
-        padding: 90px;
+        /* padding: 90px; */
     }
 }
 
@@ -99,11 +99,6 @@ header {
     }
 }
 
-@media(max-width: 670px) {
-    .menu-box {
-        width: 400px;
-    }
-}
 
 .menu-header {
     max-width: 700px;
@@ -204,4 +199,15 @@ header {
 
 .footer h2 {
     font-size: 20px;
+}
+
+
+@media(max-width: 670px) {
+    .menu-box {
+        width: 400px;
+    }
+
+    .extras-sides-drink {
+    width: 415px;
+    }
 }
