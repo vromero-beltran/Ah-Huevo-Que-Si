@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form method="post" action="" name="contact-form">
+                        <form method="post" action="" name="submit-to-google-sheet">
                             <h2>Send Message</h2>
                             <div class="inputBox">
                                 <input type="text"  name="your-name" placeholder="Name" required="required">
@@ -71,6 +71,7 @@
                                 <input type="submit" value="submit" id="submit">
                             </div>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </section>
@@ -87,7 +88,22 @@
             </div>
         </footer>
         
-        <script src="/assets/js/contact.js" >
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx08OilltGbTHzlz45VPpP0ZfoooMW3wIIUC73Xia4L-PMh_FOSp7CRvmUm1H0SyTda/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
         </script>
     </body>
 </html>

@@ -216,6 +216,13 @@ input[type="submit"]:active {
     transform: scale(1.1);
 }
 
+
+#msg {
+    color: #ff0d00;
+    margin-top: 10px;
+    display: block;
+}
+
 @media( max-width:991px) {
 
     body {
