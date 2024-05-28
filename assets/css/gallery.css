@@ -81,6 +81,8 @@ header {
     color: rgb(0, 0, 0);
     border-radius: 10px 10px 10px 10px;
     background-color: hsla(0, 0%, 100%, 0.5);
+    pointer-events: none;
+    user-select: none;
 }
 
 .grid-gallery .grid-item img {
@@ -99,6 +101,7 @@ header {
 .grid-gallery .grid-item a {
     cursor:auto;
     pointer-events: none;
+    user-select: none;
 }
 
 @media(max-width: 578px) {
