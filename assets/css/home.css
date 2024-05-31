@@ -219,6 +219,10 @@ header {
     }
 }
 
+footer {
+    background-color: white;
+}
+
 /* ..........Footter........ */
     .footer {
         padding: 30px;
