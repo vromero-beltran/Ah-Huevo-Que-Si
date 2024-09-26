@@ -18,7 +18,7 @@ header {
     left: 0;
     width: 100%;
     font-size: 40px;
-    padding: 20px 100px;
+    padding: 20px 80px;
     font-family: Script, Calligraphy, Handwritten Typefaces;
     display: flex;
     justify-content: space-between;
@@ -32,9 +32,28 @@ header {
 
 .nav a{
     font-size: 40px;
-    padding: 3px;
+    padding: 5px;
     text-decoration: none;
     color: white;
+    border-radius: 1ch;
+    background-color: rgb(40, 40, 40);
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
+
+nav a.active {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
+
+@media(max-width: 915px) {
+    .nav a {
+        padding: 0 5px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -51,7 +70,13 @@ header {
 
 @media(max-width: 525px) {
     .nav {
-        font-size: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 30px;
     }
 }
 /* ..........Main......... */

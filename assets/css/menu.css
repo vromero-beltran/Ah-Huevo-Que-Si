@@ -20,12 +20,14 @@ main {
     background-position-x: center;
 }
 
+/* .........Header.......... */
+
 header {
     top: 0;
     left: 0;
     width: 100%;
     font-size: 40px;
-    padding: 20px 100px;
+    padding: 20px 80px;
     font-family: Script, Calligraphy, Handwritten Typefaces;
     display: flex;
     justify-content: space-between;
@@ -39,30 +41,28 @@ header {
 }
 
 .nav a{
-    font-size: 25px;
-    padding: 3px;
+    font-size: 40px;
+    padding: 5px;
     text-decoration: none;
     color: white;
+    border-radius: 1ch;
+    background-color: rgb(40, 40, 40);
+    transition: 0.5s;
 }
 
-@media(max-width: 525px) {
-    .menu-box {
-        font-size: 25px;
-        padding: 10px;
-        margin: 5px;
-    }
+.nav a:hover {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
 
-    .meats {
-        font-size: 40px;
-    }
+nav a.active {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
 
-    .left-mini-menu-box {
-        padding: 1px;
-        margin: 1px;
-    }
-
-    .footer {
-        padding: 10px;
+@media(max-width: 915px) {
+    .nav a {
+        padding: 0 5px;
     }
 }
 
@@ -78,27 +78,30 @@ header {
     }
 }
 
-@media(min-width: 483px) {
-    .extras-sides-drink {
-        /* padding: 90px; */
+@media(max-width: 525px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 30px;
     }
 }
+/* ..........Main......... */
 
-.menu-box {
-    margin: 10px;
-    padding: 5px;
-}
+@media(max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+    }
 
-.carne-width {
-    width: 700px;
-}
-
-@media(max-width: 800px) {
-    .carne-width {
-        width: 600px;
+    nav a {
+        padding-top: 30px;
     }
 }
-
 
 .menu-header {
     max-width: 700px;
@@ -211,5 +214,47 @@ header {
 
     .extras-sides-drink {
     width: 415px;
+    }
+}
+
+@media(min-width: 483px) {
+    .extras-sides-drink {
+        /* padding: 90px; */
+    }
+}
+
+.menu-box {
+    margin: 10px;
+    padding: 5px;
+}
+
+.carne-width {
+    width: 700px;
+}
+
+@media(max-width: 800px) {
+    .carne-width {
+        width: 600px;
+    }
+}
+
+@media(max-width: 525px) {
+    .menu-box {
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .meats {
+        font-size: 40px;
+    }
+
+    .left-mini-menu-box {
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .footer {
+        padding: 10px;
     }
 }
