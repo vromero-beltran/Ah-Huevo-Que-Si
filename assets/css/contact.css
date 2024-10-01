@@ -5,9 +5,10 @@
     font-family: Script, Calligraphy, Handwritten Typefaces;
 }
 
-body {
+main {
     background: url(/download/background-2.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 /* .........Header.......... */

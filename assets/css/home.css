@@ -6,7 +6,6 @@
 }
 
 body {
-    min-height: 100vh;
     background: url(/download/background-2.jpg) no-repeat;
     background-size:cover;
     background-position-x: center;
@@ -24,7 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: rgb(40, 40, 40);
+    border-radius: 10px 10px 10px 10px;
+    background-color: hsla(0, 0%, 24%, 0.945);
 }
 .logo {
     height: 250px;
@@ -80,7 +80,11 @@ nav a.active {
     }
 }
 /* ..........Main......... */
-.container {
+
+section {
+    padding: 50px 10px;
+}
+div.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,8 +92,6 @@ nav a.active {
     border-radius: 10px 10px 10px 10px;
     background-color: hsla(0, 0%, 100%, 0.5);
     padding: 10px;
-    margin: 10px;
-    
 }
 
 .container h2 {

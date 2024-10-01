@@ -14,10 +14,15 @@ main {
 }
 
 .container {
-    min-height: 100vh;
-    background: url(/download/background-2.jpg) no-repeat;
-    background-size:cover;
-    background-position-x: center;
+    background: none;
+    background-color: black;
+}
+
+@media(max-width: 725px) {
+    .container {
+        background: none;
+        background-color: black;
+    }
 }
 
 /* .........Header.......... */
@@ -91,17 +96,6 @@ nav a.active {
 }
 /* ..........Main......... */
 
-@media(max-width: 600px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        font-size: 60px;
-    }
-
-    nav a {
-        padding-top: 30px;
-    }
-}
 
 .menu-header {
     max-width: 700px;
@@ -206,23 +200,6 @@ nav a.active {
     font-size: 20px;
 }
 
-
-@media(max-width: 670px) {
-    .menu-box {
-        width: 400px;
-    }
-
-    .extras-sides-drink {
-    width: 415px;
-    }
-}
-
-@media(min-width: 483px) {
-    .extras-sides-drink {
-        /* padding: 90px; */
-    }
-}
-
 .menu-box {
     margin: 10px;
     padding: 5px;
@@ -235,6 +212,16 @@ nav a.active {
 @media(max-width: 800px) {
     .carne-width {
         width: 600px;
+    }
+}
+
+@media(max-width: 670px) {
+    .menu-box {
+        width: 400px;
+    }
+
+    .extras-sides-drink {
+    width: 415px;
     }
 }
 
@@ -256,5 +243,11 @@ nav a.active {
 
     .footer {
         padding: 10px;
+    }
+}
+
+@media(min-width: 483px) {
+    .extras-sides-drink {
+        font-size: x-small;
     }
 }
