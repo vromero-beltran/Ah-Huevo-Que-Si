@@ -40,9 +40,20 @@ header {
     transition: 0.5s;
 }
 
+.nav a:hover {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
+
 nav a.active {
     background-color: rgb(79, 79, 79);
     color: black;
+}
+
+@media(max-width: 915px) {
+    .nav a {
+        padding: 0 5px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -58,6 +69,12 @@ nav a.active {
 }
 
 @media(max-width: 525px) {
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
     .nav a {
     font-size: 30px;
