@@ -13,17 +13,12 @@ main {
     overflow: scroll;
 }
 
-/* .container {
-    background: none;
-    background-color: black;
-} */
-
-@media(max-width: 725px) {
+/* @media(max-width: 725px) {
     .container {
         background: none;
         background-color: black;
     }
-}
+} */
 
 /* .........Header.......... */
 
