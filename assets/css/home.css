@@ -58,8 +58,9 @@ nav a.active {
 }
 
 @media(max-width: 525px) {
-    .nav {
-        font-size: 60px;
+
+    .nav a {
+    font-size: 30px;
     }
 }
 /* ..........Main......... */
@@ -231,9 +232,6 @@ nav a.active {
     }
 }
 
-footer {
-    background-color: white;
-}
 
 /* ..........Footter........ */
     .footer {
