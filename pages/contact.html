@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ah Huevo Que Si</title>
+        <link rel="stylesheet" href="/assets/css/contact.css" />
+        <script src="https://kit.fontawesome.com/89fb98b415.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img src="/download/logo.png" class="logo">
+            <nav class="nav">
+                <a href="/index.html">Home</a>
+                <a href="/pages/menu.html">Menu</a>
+                <a href="/pages/gallery.html">Gallery</a>
+                <a class="active" href="/pages/contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>Give Us a call to place an order and to set up any future catering. Send us a message or email us for any questions.</p>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+                            <div class="text">
+                                <h3>Address:</h3>
+                                <p>7476 SE 82nd Ave</p>
+                                <p>Portland, OR 97266</p>
+                            </div>
+                        </div>
+                        <div class="box width-box">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <h3>Phone:</h3>
+                                <p>(503) 847-6711</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text">
+                                <h3>Email:</h3>
+                                <p>ahhuevokesi@icloud.com</p>                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form method="post" action="" name="submit-to-google-sheet">
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text"  name="your-name" placeholder="Name" required="required">
+                                <span>Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="your-number" placeholder="Phone Number" required="required">
+                                <span>Phone Number</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="email" name="your-email" placeholder="Email" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea name="message" rows="7" placeholder="Enter Message Here" required="required"></textarea>
+                                <span>Enter Message Here</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="submit" id="submit">
+                            </div>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <h2>Contact # (503) 847-6711</h2>
+                <p>7476 SE 82nd Ave</p>
+                <p>Portland, OR 97266</p>
+                <p>
+                    &copy; 2024 by Ah Huevo Que Si. Proudly created by Victor Romero-Beltran. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx08OilltGbTHzlz45VPpP0ZfoooMW3wIIUC73Xia4L-PMh_FOSp7CRvmUm1H0SyTda/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100 vh;
+}
+
+main {
+    flex: 1;
+    overflow: scroll;
+}
+
+.container {
+    background: none;
+    background-color: black;
+}
+
+@media(max-width: 725px) {
+    .container {
+        background: none;
+        background-color: black;
+    }
+}
+
+/* .........Header.......... */
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 80px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(40, 40, 40);
+}
+
+.logo {
+    height: 250px;
+}
+
+.nav a{
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 1ch;
+    background-color: rgb(40, 40, 40);
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
+
+nav a.active {
+    background-color: rgb(79, 79, 79);
+    color: black;
+}
+
+@media(max-width: 915px) {
+    .nav a {
+        padding: 0 5px;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+    }
+
+    nav a {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 525px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 30px;
+    }
+}
+/* ..........Main......... */
+
+
+.menu-header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menus h4 {
+    font-size: 22px;
+}
+
+.main-food {
+    text-align: center;
+    flex-basis: 32%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.main-food h2 {
+    font-size: 40px;
+}
+
+.menu-header h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.menu-header h2::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lunch-dinner {
+    padding-top: 40px;
+}
+
+.lunch-dinner-dishes h2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 33px;
+}
+
+.meats {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.extras-sides-drink {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 720px;
+}
+
+.extras-sides-drink h2{
+    font-size: 40px;
+}
+
+.left {
+    padding: 9px;
+    margin: 1px;
+}
+
+.right {
+    padding: 9px;
+    margin: 1px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: rgb(195, 195, 195);
+}
+
+.footer p {
+    padding: 3px;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+.menu-box {
+    margin: 10px;
+    padding: 5px;
+}
+
+.carne-width {
+    width: 700px;
+}
+
+@media(max-width: 800px) {
+    .carne-width {
+        width: 600px;
+    }
+}
+
+@media(max-width: 670px) {
+    .menu-box {
+        width: 400px;
+    }
+
+    .extras-sides-drink {
+    width: 415px;
+    }
+}
+
+@media(max-width: 525px) {
+    .menu-box {
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .meats {
+        font-size: 40px;
+    }
+
+    .left-mini-menu-box {
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media(min-width: 483px) {
+    .extras-sides-drink {
+        font-size: x-small;
+    }
+}
