@@ -119,19 +119,24 @@ nav a.active {
     flex-direction: column;
 }
 
-.menus h4 {
-    font-size: 22px;
-}
-
 .main-food {
     text-align: center;
     flex-basis: 32%;
     background-color: hsla(0, 0%, 100%, 0.5);
     border-radius: 10px 10px 10px 10px;
+    width: 720px;
 }
 
 .main-food h2 {
     font-size: 40px;
+}
+
+.menu-box h4 {
+    font-size: 22px;
+}
+
+.menu-box p {
+    font-size: 19px;
 }
 
 .lunch-dinner {
@@ -148,6 +153,14 @@ nav a.active {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.meats h2 {
+    font-size: 40px;
+}
+
+.middle-mini-menu-box h4{
+    font-size: 20px;
+} 
 
 .extras-sides-drink {
     display: flex;
@@ -171,7 +184,27 @@ nav a.active {
     margin: 1px;
 }
 
+.left-mini-menu-box {
+    font-size: 20px;
+}
+
+.right-mini-menu-box {
+    font-size: 20px;
+}
+
 @media(max-width: 525px) {
+
+    .meats {
+        padding-bottom: 20px;
+    }
+
+    .meats .middle-mini-menu-box {
+        padding: 0px;
+    }
+
+    .middle-mini-menu-box h4 {
+    font-size: 20px;
+    }
 
     .extras-sides-drink .left {
         margin-left: 15px;
@@ -220,7 +253,7 @@ nav a.active {
         font-size: 20px;
     }
 }
-
+/* ..........Footer.......... */
 .footer {
     padding: 30px;
     clear: both;
@@ -238,36 +271,25 @@ nav a.active {
     font-size: 20px;
 }
 
-.menu-box {
-    margin: 10px;
-    padding: 5px;
-}
-
-.carne-width {
-    width: 700px;
-}
-
 @media(max-width: 800px) {
     .carne-width {
         width: 600px;
     }
 }
 
-@media(max-width: 670px) {
-    .menu-box {
-        width: 400px;
+@media(max-width: 770px) {
+    .main-food {
+        width: 500px;
     }
 
     .extras-sides-drink {
-    width: 415px;
+    width: 500px;
     }
 }
 
 @media(max-width: 525px) {
     .menu-box {
-        font-size: 25px;
-        padding: 10px;
-        margin: 5px;
+        padding: 5px;
     }
 
     .meats {
@@ -281,11 +303,5 @@ nav a.active {
 
     .footer {
         padding: 10px;
-    }
-}
-
-@media(min-width: 483px) {
-    .extras-sides-drink {
-        font-size: x-small;
     }
 }
