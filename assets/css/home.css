@@ -18,7 +18,7 @@ header {
     left: 0;
     width: 100%;
     font-size: 40px;
-    padding: 20px 100px;
+    padding: 20px 80px;
     font-family: Script, Calligraphy, Handwritten Typefaces;
     display: flex;
     justify-content: space-between;
@@ -32,9 +32,17 @@ header {
 
 .nav a{
     font-size: 40px;
-    padding: 3px;
+    padding: 5px;
     text-decoration: none;
     color: white;
+    border-radius: 1ch;
+    background-color: rgb(40, 40, 40);
+    transition: 0.5s;
+}
+
+nav a.active {
+    background-color: rgb(79, 79, 79);
+    color: black;
 }
 
 @media(max-width: 600px) {
@@ -143,6 +151,16 @@ header {
     justify-content: center;
 }
 
+.services h3 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.services p {
+    font-size: 25px;
+}
+
 .explained {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,12 +173,6 @@ header {
     background-color: hsla(0, 0%, 100%, 0.8);
     padding: 10px;
     margin: 5px;
-}
-
-.iner-block h4 {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
 }
 
 @media(max-width: 700px) {
