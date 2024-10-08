@@ -13,13 +13,6 @@ main {
     overflow: scroll;
 }
 
-/* @media(max-width: 725px) {
-    .container {
-        background: none;
-        background-color: black;
-    }
-} */
-
 /* .........Header.......... */
 
 header {
@@ -99,6 +92,26 @@ nav a.active {
     margin-bottom: 60px;
 }
 
+.menu-header h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.menu-header h2::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .menus {
     display: flex;
     justify-content: center;
@@ -119,26 +132,6 @@ nav a.active {
 
 .main-food h2 {
     font-size: 40px;
-}
-
-.menu-header h2 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 50px;
-    margin: 20px;
-    padding: 30px;
-    position: relative;
-}
-
-.menu-header h2::after {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 3px;
-    background-color: red;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .lunch-dinner {
@@ -176,6 +169,56 @@ nav a.active {
 .right {
     padding: 9px;
     margin: 1px;
+}
+
+@media(max-width: 525px) {
+
+    .extras-sides-drink .left {
+        margin-left: 15px;
+    }
+    .extras-sides-drink .left h2 {
+        font-size: 30px;
+        position: relative;
+    }
+
+    .extras-sides-drink .left h2::after {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .extras-sides-drink .left h4 {
+        font-size: 20px;
+    }
+
+    .extras-sides-drink .right {
+        margin-right: 15px;
+    }
+
+    .extras-sides-drink .right h2 {
+        font-size: 30px;
+        position: relative;
+    }
+
+    .extras-sides-drink .right h2::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: red;
+        bottom: 0;
+        left: 25%;
+        transform: translateX(-50%);
+    }
+
+    .extras-sides-drink .right h4 {
+        font-size: 20px;
+    }
 }
 
 .footer {
