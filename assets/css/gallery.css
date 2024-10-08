@@ -153,6 +153,10 @@ nav a.active {
         width: 290px;
         height: 290px;
     }
+
+    .grid-gallery .grid-item h2 {
+        font-size: 20px;
+    }
 }
 
 
