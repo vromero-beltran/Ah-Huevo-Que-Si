@@ -6,10 +6,10 @@
 }
 
 body {
+    background-image: linear-gradient(#008bfc, #c4a102, #ed7e00, #ff5e00);
 }
 
 main {
-    background-color: black;
     margin: 0rem;
 }
 
@@ -112,6 +112,10 @@ nav a.active {
     background-color: hsla(0, 0%, 100%, 0.5);
     pointer-events: none;
     user-select: none;
+    font-size: 25px;
+    font-family: Script, Calligraphy, Handwritten Typefaces;
+    margin: 10px;
+    padding: 5px;
 }
 
 .grid-gallery .grid-item img {
