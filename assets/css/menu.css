@@ -192,6 +192,68 @@ nav a.active {
     font-size: 20px;
 }
 
+/* ..........Footer.......... */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: rgb(195, 195, 195);
+}
+
+.footer p {
+    padding: 3px;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+@media(max-width: 800px) {
+    .carne-width {
+        width: 600px;
+    }
+}
+
+@media(max-width: 770px) {
+    .main-food {
+        width: 500px;
+    }
+
+    .extras-sides-drink {
+    width: 500px;
+    }
+}
+
+@media(max-width: 525px) {
+    .menu-box {
+        padding: 5px;
+    }
+
+    .menu-box h4 {
+        border-radius: 10px 10px 10px 10px;
+        background-color: hsla(0, 0%, 100%, 0.195);
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+/* working here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+    }
+
+    .meats {
+        font-size: 40px;
+    }
+
+    .left-mini-menu-box {
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
 @media(max-width: 525px) {
 
     .meats {
@@ -251,57 +313,5 @@ nav a.active {
 
     .extras-sides-drink .right h4 {
         font-size: 20px;
-    }
-}
-/* ..........Footer.......... */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    background-color: rgb(40, 40, 40);
-    color: rgb(195, 195, 195);
-}
-
-.footer p {
-    padding: 3px;
-}
-
-.footer h2 {
-    font-size: 20px;
-}
-
-@media(max-width: 800px) {
-    .carne-width {
-        width: 600px;
-    }
-}
-
-@media(max-width: 770px) {
-    .main-food {
-        width: 500px;
-    }
-
-    .extras-sides-drink {
-    width: 500px;
-    }
-}
-
-@media(max-width: 525px) {
-    .menu-box {
-        padding: 5px;
-    }
-
-    .meats {
-        font-size: 40px;
-    }
-
-    .left-mini-menu-box {
-        padding: 1px;
-        margin: 1px;
-    }
-
-    .footer {
-        padding: 10px;
     }
 }
