@@ -84,6 +84,24 @@ nav a.active {
 }
 /* ..........Main......... */
 
+.menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-food {
+    text-align: center;
+    flex-basis: 32%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 720px;
+}
+
+.main-food h2 {
+    font-size: 40px;
+}
 
 .menu-header {
     max-width: 700px;
@@ -112,23 +130,28 @@ nav a.active {
     transform: translateX(-50%);
 }
 
-.menus {
+.inner-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    margin-bottom: 60px;
+    line-height: 1;
+    list-style: none;
 }
-
-.main-food {
-    text-align: center;
-    flex-basis: 32%;
-    background-color: hsla(0, 0%, 100%, 0.5);
+/* Keep working HERE!!!!!!!!!!!!!!!!! */
+.inner-nav li {
+    background-color: hsla(0, 0%, 41%, 0.5);
     border-radius: 10px 10px 10px 10px;
-    width: 720px;
+  padding: 10px;
 }
 
-.main-food h2 {
-    font-size: 40px;
+.inner-nav a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .menu-box h4 {
