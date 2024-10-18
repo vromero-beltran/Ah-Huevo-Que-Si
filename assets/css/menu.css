@@ -93,7 +93,8 @@ nav a.active {
 
 @media(max-width: 400px) {
     .navbar {
-    padding: 0px 0px;
+        position: absolute;
+        top: 75%;
     }
 
 }
