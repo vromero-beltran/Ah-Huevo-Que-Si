@@ -156,7 +156,6 @@ nav a.active {
     line-height: 1;
     list-style: none;
 }
-/* Keep working HERE!!!!!!!!!!!!!!!!! */
 .inner-nav li {
     background-color: hsla(0, 0%, 41%, 0.5);
     border-radius: 10px 10px 10px 10px;
@@ -288,6 +287,14 @@ nav a.active {
 
     .meats {
         font-size: 40px;
+    }
+
+    .extras-sides-drink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
     }
 
     .left-mini-menu-box {
