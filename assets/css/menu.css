@@ -160,7 +160,7 @@ nav a.active {
 .inner-nav li {
     background-color: hsla(0, 0%, 41%, 0.5);
     border-radius: 10px 10px 10px 10px;
-  padding: 10px;
+    padding: 10px;
 }
 
 .inner-nav a {
@@ -260,6 +260,14 @@ nav a.active {
         width: 500px;
     }
 
+    .inner-nav {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+
     .extras-sides-drink {
     width: 500px;
     }
@@ -276,7 +284,6 @@ nav a.active {
         padding: 5px;
         margin: 5px;
         width: 100%;
-/* working here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
     }
 
     .meats {
@@ -352,5 +359,17 @@ nav a.active {
 
     .extras-sides-drink .right h4 {
         font-size: 20px;
+    }
+}
+
+@media(max-width: 525px) {
+.main-food {
+    width: 400px;
+}
+}
+
+@media(max-width: 525px) {
+    .main-food {
+        width: 375px;
     }
 }
