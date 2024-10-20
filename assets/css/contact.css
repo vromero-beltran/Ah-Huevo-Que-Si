@@ -29,16 +29,23 @@ header {
 .navbar {
     position: absolute;
     top: 80%;
-    left: 30%;
+    left: 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
 .nav a{
     font-size: 40px;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     border-radius: 1ch;
@@ -67,7 +74,13 @@ nav a.active {
     .navbar {
         position: absolute;
         top: 80%;
-        left: 10%;
+        left: 5%;
+    }
+}
+
+@media(max-width: 769px) {
+    .nav {
+        gap: 20px;
     }
 }
 
@@ -80,7 +93,7 @@ nav a.active {
 @media(max-width: 600px) {
     .navbar {
         position: absolute;
-        left: 20%;
+        left: 12%;
         padding: 20px 0px;
     }
 
@@ -92,9 +105,17 @@ nav a.active {
 
 @media(max-width: 473px) {
     .navbar {
-    position: absolute;
-    left: 5%;
+        top: 60%;
+        left: 15%;
     }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 250px;
+        }
 
     .primary {
         width: 473px;
@@ -111,6 +132,7 @@ nav a.active {
     .navbar {
         position: absolute;
         top: 55%;
+        left: 15%;
         padding: 10px;
     }
 
@@ -119,7 +141,11 @@ nav a.active {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 250px;
+    }
+
+    .nav {
+        gap: 0px;
     }
 
     .nav a {
