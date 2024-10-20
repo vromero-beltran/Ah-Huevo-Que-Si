@@ -17,6 +17,8 @@ header {
     max-width: auto;
     max-height: auto;
     font-family: Script, Calligraphy, Handwritten Typefaces;
+    background-color: rgb(33, 33, 33);
+    height: 480px;
 }
 
 .primary {
@@ -81,6 +83,11 @@ nav a.active {
         left: 20%;
         padding: 20px 0px;
     }
+
+    .primary {
+        width: 600px;
+        height: 380px;
+    }
 }
 
 @media(max-width: 473px) {
@@ -88,11 +95,41 @@ nav a.active {
     position: absolute;
     left: 5%;
     }
+
+    .primary {
+        width: 473px;
+        height: 300px;
+    }
 }
 
 @media(max-width: 400px) {
+    header {
+        height: 320px;
+        background-color: rgb(33, 33, 33);
+    }
+
     .navbar {
-    padding: 0px 0px;
+        position: absolute;
+        top: 55%;
+        padding: 10px;
+    }
+
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    }
+
+    .nav a {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .primary {
+        width: 400px;
+        height: 210px;
     }
 
 }
