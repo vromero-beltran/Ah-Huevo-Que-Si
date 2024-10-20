@@ -230,6 +230,11 @@ nav a.active {
 }
 
 @media(max-width: 400px) {
+
+    .grid-gallery {
+        flex-direction: column;
+    }
+
     .grid-gallery .grid-item {
         width: 290px;
         height: 290px;
