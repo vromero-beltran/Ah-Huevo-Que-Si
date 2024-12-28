@@ -33,7 +33,7 @@ header {
 .navbar {
     position: absolute;
     top: 80%;
-    left: 22%;
+    left: 16%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,25 +70,45 @@ nav a.active {
 @media(max-width: 1200px) {
     .navbar {
         position: absolute;
-        left: 20%;
+        left: 4%;
     }
 }
 
 @media(max-width: 925px) {
     .navbar {
         position: absolute;
-        top: 80%;
-        left: 5%;
+        top: 74%;
+        left: 1%;
+    }
+
+    .nav a {
+        font-size: 35px;
     }
 }
 
 @media(max-width: 769px) {
+
+    .navbar {
+        position: absolute;
+        top: 74%;
+    }
     .nav {
         gap: 20px;
+    }
+
+    .nav a {
+        font-size: 30px;
     }
 }
 
 @media(max-width: 720px) {
+
+    .navbar {
+        position: absolute;
+        left: -2%;
+        top: 74%;
+    }
+
     .nav a {
         font-size: 30px;
     }
@@ -97,7 +117,8 @@ nav a.active {
 @media(max-width: 600px) {
     .navbar {
         position: absolute;
-        left: 12%;
+        left: 1%;
+        top: 66%;
         padding: 20px 0px;
     }
 
@@ -108,9 +129,18 @@ nav a.active {
 }
 
 @media(max-width: 473px) {
+
+    header {
+        height: 520px;
+    }
+
+    .primary {
+        width: 473px;
+        height: 300px;
+    }
     .navbar {
-        top: 60%;
-        left: 15%;
+        top: 52%;
+        left: 22%;
     }
 
     nav {
@@ -121,21 +151,16 @@ nav a.active {
         width: 250px;
         }
 
-    .primary {
-        width: 473px;
-        height: 300px;
-    }
 }
 
 @media(max-width: 400px) {
     header {
-        height: 320px;
-        background-color: rgb(33, 33, 33);
+        height: 420px;
     }
 
     .navbar {
         position: absolute;
-        top: 55%;
+        top: 45%;
         left: 15%;
         padding: 10px;
     }

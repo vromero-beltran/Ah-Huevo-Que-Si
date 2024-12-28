@@ -11,7 +11,7 @@ Ah-Huevo-Que-Si is a website for a Mexican food truck business, showcasing their
 - **Address**: Provides the physical address of the food truck's location.
 - **About Section**: Introduces visitors to the food truck's unique Mexican cuisine, highlighting the vibrant flavors of Jalisco and Nayarit.
 - **Services**: Describes the various services offered by the food truck, including Mexican brunch, dinner delights, the signature Jalisco and Nayarit mix, and special catering services.
-- **Menu**: Provides a list of the food truck's menu items, including a description, price, and image.
+- **Menu**: Provides a list of the food truck's menu items, including a description, and price.
 - **Contact Form**: Provides a contact form for customers to contact the food truck.
 - **Gallery**: Displays a gallery of photos of the food truck's menu items location.
 
@@ -41,5 +41,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 For more information or inquiries, please contact:
 
-- Email: ahhuevokesi@icloud.com
-- Phone: (503) 847-6711
+- Email: vromero.beltran2016@gamil.com
+- Phone: (619) 677-8078
