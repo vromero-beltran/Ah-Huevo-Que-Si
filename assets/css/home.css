@@ -196,7 +196,8 @@ nav a.active {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
 }
 
 .taco-slider {
@@ -206,6 +207,7 @@ nav a.active {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: max-content;
 }
 
 .taco-slider .tt {
