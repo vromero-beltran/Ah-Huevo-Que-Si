@@ -372,16 +372,15 @@ input[type="submit"]:active {
 
 @media(max-width: 525px) {
     .text {
-      width: 300px;
+        width: 300px;
     }
     .box {
-      width: 220px;
+        width: 220px;
     }
-  
     .width-box {
-      width: 195px;
+        width: 195px;
     }
-  }
+}
 
 
 /* ........Footer........ */

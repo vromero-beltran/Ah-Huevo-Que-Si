@@ -181,7 +181,43 @@ nav a.active {
     }
 
 }
+/* ..........TACO TUESDAY......... */
+
+@keyframes slide {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.taco-tuesday {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+}
+
+.taco-slider {
+    animation: 12s slide infinite linear;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.taco-slider .tt {
+    display: flex;
+    gap: 5px;
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+
 /* ..........Main......... */
+
 .container {
     display: flex;
     justify-content: center;
@@ -191,7 +227,6 @@ nav a.active {
     background-color: hsla(0, 0%, 100%, 0.5);
     padding: 10px;
     margin: 10px;
-    
 }
 
 .container h2 {
